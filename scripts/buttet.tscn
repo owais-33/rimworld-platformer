@@ -3,8 +3,8 @@
 [ext_resource type="Script" uid="uid://1q3mc02ccg87" path="res://scripts/buttet.gd" id="1_43a3x"]
 [ext_resource type="Texture2D" uid="uid://8vist4t682vc" path="res://assets/bullet/Snipe1.png" id="1_jjr0u"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ihou5"]
-size = Vector2(20, 12)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_43a3x"]
+size = Vector2(20, 8)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v1tl8"]
 atlas = ExtResource("1_jjr0u")
@@ -26,7 +26,7 @@ script = ExtResource("1_43a3x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 4)
-shape = SubResource("RectangleShape2D_ihou5")
+shape = SubResource("RectangleShape2D_43a3x")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
