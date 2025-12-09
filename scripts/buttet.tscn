@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://dssk0urv0strx"]
+
+[ext_resource type="Script" uid="uid://1q3mc02ccg87" path="res://scripts/buttet.gd" id="1_43a3x"]
+[ext_resource type="Texture2D" uid="uid://8vist4t682vc" path="res://assets/bullet/Snipe1.png" id="1_jjr0u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ihou5"]
+size = Vector2(20, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v1tl8"]
+atlas = ExtResource("1_jjr0u")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7j73i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v1tl8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[node name="bullet" type="Area2D"]
+script = ExtResource("1_43a3x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_ihou5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(14, 6)
+rotation = 1.5707964
+scale = Vector2(1, 0.967)
+sprite_frames = SubResource("SpriteFrames_7j73i")
+frame_progress = 0.092475906

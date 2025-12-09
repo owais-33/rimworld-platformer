@@ -338,5 +338,3 @@ autoplay = "idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(16.625, 61.90625)
 shape = SubResource("RectangleShape2D_oh5ij")
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

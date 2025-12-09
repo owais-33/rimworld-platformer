@@ -6,6 +6,7 @@ const JUMP_VELOCITY = -850.0
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
 
+
 func _physics_process(delta: float) -> void:
 	#add animations
 	if velocity.x > 1 or velocity.x < -1:

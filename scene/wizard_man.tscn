@@ -46,17 +46,17 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4gyqm"]
-size = Vector2(33, 54)
+size = Vector2(34.5, 56)
 
 [node name="wizard man" type="Area2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-40, 40)
+position = Vector2(-12, 28)
 sprite_frames = SubResource("SpriteFrames_ar8e5")
 autoplay = "default"
 frame_progress = 0.22209309
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-46, 39)
+position = Vector2(-17, 28)
 shape = SubResource("RectangleShape2D_4gyqm")
