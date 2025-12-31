@@ -1249,5 +1249,5 @@ tile_set = SubResource("TileSet_d6o7v")
 position = Vector2(69, 417)
 
 [node name="wizard man" parent="." instance=ExtResource("6_cuppf")]
-position = Vector2(987, 413)
+position = Vector2(975, 408)
 scale = Vector2(2, 2)
